@@ -1,3 +1,4 @@
+
 abstract class Gun{
 
   Gun(){
@@ -13,6 +14,7 @@ class GunWithoutCrosshair extends Gun{
   var _name;
   GunWithoutCrosshair({String name}){
     this._name = name;
+    print('-- init gun without crosshair class --');
   }
   
   @override
@@ -28,6 +30,7 @@ class GunWithCrosshair extends Gun{
 
   GunWithCrosshair({String name}){
     this._name = name;
+    print('-- init gun with crosshair class --');
   }
 
   @override
@@ -43,6 +46,7 @@ class GunWithSilencer extends Gun{
 
   GunWithSilencer({String name}){
     this._name = name;
+    print('-- init gun with silencer class --');
   }
 
   @override
@@ -58,6 +62,7 @@ class GunWithSilencerAndCrosshair extends Gun{
 
   GunWithSilencerAndCrosshair({String name}){
     this._name = name;
+    print('-- init gun with crosshair and silencer class --');
   }
 
   @override
@@ -68,5 +73,8 @@ class GunWithSilencerAndCrosshair extends Gun{
 }
 
 main() {
+  var gunWithSilencer = GunWithSilencer(name: 'nome');
+  var gunWithSilencerAndCrosshair = GunWithSilencerAndCrosshair(name: 'nome');
+  var gunWithCrosshair = GunWithCrosshair(name: 'nome');
   return null;
 }

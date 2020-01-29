@@ -51,7 +51,7 @@ class Silencer extends DecoratorGun{
     super.mount();
     print("-- add silencer to gun --");
   }
-
+  
 }
 
 main(){
